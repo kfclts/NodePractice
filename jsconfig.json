@@ -1,0 +1,21 @@
+//https://code.visualstudio.com/docs/languages/jsconfig
+{
+    "compilerOptions": {
+        "target": "es6"
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "models",
+        "routes",
+        "util",
+        "./app.js",
+        "controllers"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "sequelize"
+        ]
+    }
+}
