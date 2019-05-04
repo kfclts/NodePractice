@@ -12,7 +12,7 @@ class Product {
     const db = getDb();
     //db.collection('products').insertOne({name: 'A Booke', price: '12.99'});
     //db.collection('products').insertMany([{name: 'A Booke', price: '12.99'}, {name: 'A Booke', price: '12.99'}]);
-    db.collection('products')
+    return db.collection('products')
     .insertOne(this)
     .then( result => {
       console.log(result);
